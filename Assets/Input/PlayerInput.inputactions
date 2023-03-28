@@ -3,33 +3,31 @@
     "maps": [
         {
             "name": "OnFoot",
-            "id": "6ec3f879-ef35-4abd-8389-743c66bb8069",
+            "id": "26d2884e-29af-436f-b65c-9391b0eb8dec",
             "actions": [
                 {
                     "name": "Movement",
                     "type": "Value",
-                    "id": "ec5ebb81-9d0a-41f6-b57e-95da0314159d",
+                    "id": "791080b1-87cd-4947-9f89-5f5f9d9e816c",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "9389ec72-de0a-4f27-8745-510ab7c46c8f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "f4d361b2-ecbe-4c7f-8a55-cc26bd912963",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "2D Vector",
-                    "id": "bb80118b-5691-4afe-81dc-687ae2a5dc5f",
+                    "name": "WASD",
+                    "id": "3893faf5-c12c-4a01-b67e-4ebfa8595355",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -40,8 +38,8 @@
                 },
                 {
                     "name": "up",
-                    "id": "a689e46b-f59b-40c0-816d-fc7dbb5f35a1",
-                    "path": "",
+                    "id": "628ded49-1c32-4e14-8597-8c1e25a6fcc5",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -51,8 +49,8 @@
                 },
                 {
                     "name": "down",
-                    "id": "e4690677-8fa6-40e8-974d-4b03dbe2067e",
-                    "path": "",
+                    "id": "c8b12066-4ffe-40f3-870e-1a40e78242f8",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -62,8 +60,8 @@
                 },
                 {
                     "name": "left",
-                    "id": "d670a16b-2c54-4f64-8f40-2c60dd04a3b7",
-                    "path": "",
+                    "id": "6a490ce2-ef0b-4345-b481-3b67082a4ac7",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -73,14 +71,25 @@
                 },
                 {
                     "name": "right",
-                    "id": "fb645fa8-2ac1-45d5-9c9b-f105f5beb489",
-                    "path": "",
+                    "id": "9a4ebbef-3963-4961-8391-d61aef67f41c",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "485e5eb6-2a96-4644-9fd2-ba6d733446d3",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
