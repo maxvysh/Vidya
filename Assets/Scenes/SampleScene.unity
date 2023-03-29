@@ -315,6 +315,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &1028773789 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 14254798351651443, guid: afc2087316585bb4aaa5341c12027aec, type: 3}
+  m_PrefabInstance: {fileID: 14254796741684925}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1072512394 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 14254797809980215, guid: afc2087316585bb4aaa5341c12027aec, type: 3}
@@ -345,7 +350,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  jumpHeight: 1
   gravity: -9.8
+--- !u!114 &1072512406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072512394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34745a60a86c5045bb6fcd016526bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1028773789}
+  xSensitivity: 30
+  ySensitivity: 30
 --- !u!1 &1073610142
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,7 +561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 14254798351651443, guid: afc2087316585bb4aaa5341c12027aec, type: 3}
       propertyPath: near clip plane
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afc2087316585bb4aaa5341c12027aec, type: 3}
